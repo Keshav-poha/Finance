@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+        <div class="container" style="display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:20px;margin-bottom:30px;">
+                <img src="assets/images/fin.png" class="app-logo">
+                <h1 style="font-family:'Space Grotesk',sans-serif;font-size:3.5em; margin-left: 5%;">Finance Hub</h1>
+            </div>
+            <div style="display:flex;gap:30px;">
+                        <nav class="navigation" style="display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:160px;">
+                            <span class="nav-item active" data-tab="investments">Investments</span>
+                            <span class="nav-item" data-tab="income-expense">Income & Expense</span>
+                            <span class="nav-item" data-tab="visualizer">Visualizer</span>
+                            <span class="nav-item" data-tab="top-stocks">Top Stocks</span>
+                </nav>
+                <div class="content-area" style="flex:1;">
+                    <div class="tab-content active" id="investments">
+                        <div class="card">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <span><b>Total Portfolio Value:</b> ₹20,00,000</span>
+                                <button class="edit-btn" title="Edit Investments">Edit</button>
+                            </div>
+                            <div>Today's Change: <span class="positive">+₹5000 (0.25%)</span></div>
+                            <div>Total Return: <span class="positive">+₹4,00,000 (20%)</span></div>
+                        </div>
+                        <div class="card">
+                            <div><b>Asset Allocation</b></div>
+                            <table class="table">
+                                <tr><th>No.</th><th>Asset</th><th>Investment</th><th>Monthly Return %</th><th>Monthly Profit</th></tr>
+                                <tr><td>1</td><td>Equity – Large Cap</td><td>₹5,00,000</td><td>1.50%</td><td>₹7,500</td></tr>
+                                <tr><td>2</td><td>Equity – Mid Cap</td><td>₹2,50,000</td><td>2.00%</td><td>₹5,000</td></tr>
+                                <tr><td>3</td><td>Equity – Small Cap</td><td>₹1,50,000</td><td>2.33%</td><td>₹3,500</td></tr>
+                                <tr><td>4</td><td>Index Funds (Nifty/Sensex)</td><td>₹2,00,000</td><td>1.25%</td><td>₹2,500</td></tr>
+                                <tr><td>5</td><td>International Equity</td><td>₹1,00,000</td><td>1.67%</td><td>₹1,667</td></tr>
+                                <tr><td>6</td><td>Government Bonds</td><td>₹2,00,000</td><td>0.67%</td><td>₹1,333</td></tr>
+                                <tr><td>7</td><td>Corporate Bonds</td><td>₹1,00,000</td><td>0.83%</td><td>₹833</td></tr>
+                                <tr><td>8</td><td>Gold ETF</td><td>₹1,50,000</td><td>1.17%</td><td>₹1,750</td></tr>
+                                <tr><td>9</td><td>REITs (Real Estate Trusts)</td><td>₹1,00,000</td><td>1.50%</td><td>₹1,500</td></tr>
+                                <tr><td>10</td><td>P2P Lending</td><td>₹50,000</td><td>1.83%</td><td>₹917</td></tr>
+                                <tr><td>11</td><td>Mutual Fund – Balanced Advantage</td><td>₹1,00,000</td><td>1.00%</td><td>₹1,000</td></tr>
+                                <tr><td>12</td><td>Mutual Fund – Sectoral (Tech)</td><td>₹50,000</td><td>2.50%</td><td>₹1,250</td></tr>
+                                <tr><td>13</td><td>Mutual Fund – Pharma</td><td>₹50,000</td><td>1.83%</td><td>₹917</td></tr>
+                                <tr><td>14</td><td>Crypto (Bitcoin/Ethereum)</td><td>₹50,000</td><td>3.33%</td><td>₹1,667</td></tr>
+                                <tr><td>15</td><td>Startup/Private Equity</td><td>₹50,000</td><td>4.17%</td><td>₹2,083</td></tr>
+                                <tr><td>16</td><td>Fixed Deposit</td><td>₹1,00,000</td><td>0.58%</td><td>₹583</td></tr>
+                                <tr><td>17</td><td>Savings Account</td><td>₹50,000</td><td>0.33%</td><td>₹167</td></tr>
+                                <tr><td>18</td><td>Insurance-linked Plan</td><td>₹50,000</td><td>0.67%</td><td>₹333</td></tr>
+                                <tr><td>19</td><td>Silver ETF</td><td>₹50,000</td><td>1.00%</td><td>₹417</td></tr>
+                                <tr><td>20</td><td>Commodity Fund (Oil/Agri)</td><td>₹50,000</td><td>1.50%</td><td>₹625</td></tr>
+                                <tr class="table-total"><td colspan="2">Total</td><td>₹20,00,000</td><td>1.67%</td><td>₹33,333</td></tr>
+                                <tr class="table-final"><td colspan="4">Final Value (Monthly)</td><td>₹20,33,333</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="income-expense">
+                        <div class="card" style="display:flex;align-items:center;justify-content:space-between;">
+                            <span>💰 <b>Monthly Income:</b> <span class="positive">₹2,00,000</span></span>
+                            <button class="edit-btn" title="Edit Salary">Edit</button>
+                        </div>
+                        <div class="card">🛒 <b>Monthly Expenses:</b>
+                            <button class="edit-btn" title="Edit Expenses">Edit</button>
+                            <table class="table">
+                                <tr><th>No.</th><th>Category</th><th>Amount (₹)</th><th>Percentage</th></tr>
+                                <tr><td>1</td><td>Rent & Utilities</td><td>₹40,000</td><td>20%</td></tr>
+                                <tr><td>2</td><td>Groceries</td><td>₹25,000</td><td>12.5%</td></tr>
+                                <tr><td>3</td><td>Transport</td><td>₹15,000</td><td>7.5%</td></tr>
+                                <tr><td>4</td><td>Dining & Entertainment</td><td>₹20,000</td><td>10%</td></tr>
+                                <tr><td>5</td><td>Shopping</td><td>₹15,000</td><td>7.5%</td></tr>
+                                <tr><td>6</td><td>Healthcare</td><td>₹10,000</td><td>5%</td></tr>
+                                <tr><td>7</td><td>Subscriptions & Bills</td><td>₹5,000</td><td>2.5%</td></tr>
+                                <tr><td>8</td><td>Travel & Leisure</td><td>₹20,000</td><td>10%</td></tr>
+                                <tr class="table-total"><td colspan="2">Total Spent</td><td>₹1,50,000</td><td>75%</td></tr>
+                                <tr class="table-final"><td colspan="2">Remaining / Savings</td><td>₹50,000</td><td>25%</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="visualizer">
+                        <div id="sankeyPlot" style="width:100%;max-width:800px;height:400px;margin:30px auto;"></div>
+                    </div>
+                    <div class="tab-content" id="top-stocks">
+                        <div id="live-stock-table-container">
+                            <table class="table stock-table" id="live-stock-table">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Stock Name</th>
+                                        <th>Price</th>
+                                        <th>Change (%)</th>
+                                        <th>Net Change</th>
+                                        <th>Volume</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td colspan="6">Loading live stock data...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var sankeyData = {
+        type: "sankey",
+        orientation: "h",
+        node: {
+            pad: 15,
+            thickness: 20,
+            line: { color: "black", width: 0.5 },
+            label: [
+                "Salary",          
+                "Returns",          
+                "Budget",           
+                "Rent & Utilities", 
+                "Groceries",        
+                "Transport",        
+                "Dining & Entertainment", 
+                "Shopping",         
+                "Healthcare",       
+                "Subscriptions & Bills", 
+                "Travel & Leisure", 
+                "Savings",
+                "Taxes"         
+            ],
+            color: [
+                "#2ed573", 
+                "#1e90ff", 
+                "#fff",    
+                "#00b894", 
+                "#636e72", 
+                "#fdcb6e", 
+                "#a55eea", 
+                "#ffb8b8", 
+                "#6ab04c", 
+                "#535c68", 
+                "#4834d4", 
+                "#f9ca24",
+                "fff" 
+            ]
+        },
+        link: {
+            source: [0,1,2,2,2,2,2,2,2,2,2,2,2],
+            target: [2,2,3,4,5,6,7,8,9,10,11,12],
+            value: [200000,33333,40000,25000,15000,20000,15000,10000,5000,20000,50000,33333],
+            color: [
+                "#2ed573", 
+                "#1e90ff", 
+                "#00b894", 
+                "#636e72",
+                "#fdcb6e", 
+                "#a55eea", 
+                "#ffb8b8",
+                "#6ab04c", 
+                "#535c68", 
+                "#4834d4", 
+                "#f9ca24",
+                "#fff"
+            ]
+        }
+    };
+  var sankeyLayout = {
+      title: "Monthly Money Flow",
+      font: { size: 16 },
+      paper_bgcolor: "#222",
+      plot_bgcolor: "#222",
+      font: { color: "#fff" }
+  };
+  Plotly.newPlot('sankeyPlot', [sankeyData], sankeyLayout, {responsive:true});
+});
+</script>
+</body>
+</html>
